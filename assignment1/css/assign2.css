@@ -7,8 +7,11 @@
 .herosec img{width:100%; display: flex;
   flex-wrap: wrap;
 }
-aside { background: white; margin-top: 15px;}
-.onside{margin-top: 15px;}
+aside { background: white; margin-top: 15px; font-family: 'Sofia';font-size: 22px;}
+.onside{margin-top: 10px; margin-left: 15px;}
+
+.alpha{margin-left: 15px;
+padding: 15px;}
 
 .dropdown h3{ margin:auto; border: 2px solid white; padding-bottom: 10px; padding-top: 10px;
 text-align: center;display: flex;
@@ -32,39 +35,28 @@ header {background: yellow;}
 
 .fp-tableCell {
 	background: rgb(220, 220, 220);
-    display: flex;
-  flex-wrap: wrap;
-    width: 100%;
-   text-align: center;
-
-padding:.1px;
-
-    color: black;
-    
-
+  width: 100%;
+  text-align: center;
+  padding:.1px;
+  color: black;
 }
-.fp-tableCell li {display:inline;
-}
-.fp-tableCell ul {margin-top: 10px;}
+.foot li {display:inline;}
+.fp-tableCell ul {margin-top: 5px;}
 
 
 .topnav {
-  background-color: rgb(210, 210, 210); 
-  
+  background-color: rgb(210, 210, 210);  
   width: 100%;
-display: flex;
+  display: flex;
   flex-flow: row wrap;
-  /* This aligns items to the end line on main-axis */
   justify-content: flex-end;}
 
 .topnav a{
  color: rgb(80, 80, 80);
-  
-  padding: 14px 16px;
+   padding: 14px 16px;
   text-decoration: none;
   font-size: 25px;
- /* padding-top: 20px;*/
-}
+ /* padding-top: 20px;*/}
 
 .topnav a:hover {
   background-color: #ddd;
@@ -88,6 +80,3 @@ display: flex;
 }
 
 
-
-
-/* We tell all items to be 100% width, via flex-basis */

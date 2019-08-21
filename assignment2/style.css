@@ -1,0 +1,16 @@
+.navbar-header1{
+	position: fixed;
+	width: 100%;
+}
+
+
+.fp-tableCell {
+	background: rgb(220, 220, 220);
+    width: 100%;
+   text-align: center;
+   padding:.1px;
+    color: black;
+}
+.foot li {display:inline;
+}
+.fp-tableCell ul {margin-top: 10px;}
