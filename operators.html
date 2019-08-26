@@ -1,0 +1,117 @@
+<!--Comparison statement --->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The for/in statement loops through the properties of an object.</p>
+
+<p id="demo"></p>
+
+<script>
+var txt = "";
+var person = {fname:"John", lname:"Doe", age:25}; 
+var x;
+for (x in person) {
+  txt += person[x] + " ";
+}
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+<h2>JavaScript For/Of Loop</h2>
+
+<p>The for/of statement loops through the values of an iterable object.</p>
+
+<script>
+var cars = ['BMW', 'Volvo', 'Mini'];
+var x;
+
+for (x of cars) {
+  document.write(x + "<br >");
+}
+</script>
+
+
+
+
+<h3> using the switch statement along with default case</h3>
+<p id="demo"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+    
+    default: 
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+
+
+<p>using conditional operator -> Input your age and click the button:</p>
+<h2>Check if you can vote or not</h2>
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var age, voteable;
+  age = document.getElementById("age").value;
+  voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo").innerHTML = voteable + " to vote.";
+}
+</script>
+
+
+<h2>logical operators</h2>
+
+<p>The AND operator (&&) returns true if both expressions are true, otherwise it returns false.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = 6;
+var y = 3;
+
+document.getElementById("demo").innerHTML = 
+(x < 10 && y > 1) + "<br>" + 
+(x < 10 && y < 1);
+</script>
+
+<h2>JavaScript Comparison</h2>
+
+<p>Assign 5 to x, and display the value of the comparison (x === 5):</p>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+document.getElementById("demo").innerHTML = (x === 5);
+</script>
+
+</body>
+</html>
+
