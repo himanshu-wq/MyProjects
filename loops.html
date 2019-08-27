@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h2>JavaScript While Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+<h2>JavaScript Do/While Loop. It will execute once before checking the condition.</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = ""
+var i = 0;
+
+do {
+  text += "<br>The number is " + i;
+  i++;
+}
+while (i < 10);  
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<p>The for/in statement loops through the properties of an object.</p>
+
+<p id="demo"></p>
+
+<script>
+var txt = "";
+var person = {fname:"John", lname:"Doe", age:25}; 
+var x;
+for (x in person) {
+  txt += person[x] + " ";
+}
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+<h2>JavaScript For/Of Loop</h2>
+
+<p>The for/of statement loops through the values of an iterable object.</p>
+
+<script>
+var cars = ['BMW', 'Volvo', 'Mini'];
+var x;
+
+for (x of cars) {
+  document.write(x + "<br >");
+}
+</script>
+
+
+</body>
+</html>
